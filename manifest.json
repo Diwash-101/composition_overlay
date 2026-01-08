@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Composition Overlay",
+  "description": "This extension overlays a composition grid on web pages.",
+  "version": "0.1",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting", "contextMenus", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

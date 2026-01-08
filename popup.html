@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 150px;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+      button {
+        width: 100%;
+        margin-top: 5px;
+        cursor: pointer;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body style="display: flex; flex-direction: column; gap: 15px">
+<div class="frame">
+      <strong>Frame</strong><br />
+      <button id="screen">Entire Screen</button>
+      <button id="component">Pick a component</button>
+      <button id="custom">Draw a Frame</button>
+    </div>
+    <div class="grid">
+      <strong>Grid Type</strong>
+      <button id="thirds">Rule of Thirds</button>
+      <button id="golden">Golden Ratio</button>
+      <div
+        class="buttonGroup"
+        style="display: flex; flex-direction: row; gap: 5px"
+      >
+        <button id="spiral" style="flex: 90%">Fibonacci Spiral</button>
+        <button id="rotateSpiral" style="flex: 10%" title="Rotate the Spiral">
+          <svg class="refresh" width="11" height="11" viewBox="0 0 24 24">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              d="M4.9 19.1A8 8 0 1 0 6 6l-2 2m0-4v4h4"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="buttonGroup" style="display: flex; flex-direction: row; gap: 5px">
+
+        <button id="crosshair" style="flex: 90%">Crosshair</button>
+        <button id="rotateCrosshair" style="flex:10%" title="Rotate the Crosshair">
+          <svg class="refresh" width="11" height="11" viewBox="0 0 24 24">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              d="M4.9 19.1A8 8 0 1 0 6 6l-2 2m0-4v4h4"
+            />
+          </svg>
+      </div>
+        <button id="Off">Turn Off</button>
+    </div>
+    
+
+    <script src="popup.js"></script>
+  </body>
+</html>
